@@ -1,4 +1,8 @@
 import React from 'react' 
+import { Li } from '../Li';
+import { ButtonDelete } from '../Button';
+import { ButtonEdit } from '../Button';
+
 
 export function TodoItem({ todo, toggleTodo, deleteTodo, editTodo }) {
     const { id, task, completed } = todo;
@@ -16,11 +20,11 @@ export function TodoItem({ todo, toggleTodo, deleteTodo, editTodo }) {
     }
 
     return (
-        <li>
-            {task}
+        <Li>
             <input type="checkbox" checked={completed} onChange={handleTodoClick} />
-            <button onClick={handleDeleteButton}>Delete</button>
-            <button onClick={handleEditButton}>Edit</button>
-        </li>
+            {task}
+            <ButtonEdit onClick={handleEditButton}>Edit</ButtonEdit>
+            <ButtonDelete onClick={handleDeleteButton}>Delete</ButtonDelete>
+        </Li>
     )
 }

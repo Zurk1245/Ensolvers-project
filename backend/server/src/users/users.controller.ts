@@ -14,7 +14,7 @@ export class UsersController {
 
     @Post()
     create(@Body() user: User) {
-        return this.service.createUser(user);
+     //   return this.service.createUser(user);
     }
 
     @Put()

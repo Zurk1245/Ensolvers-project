@@ -1,13 +1,26 @@
 import { Body, Controller, Get, Param, Post, Put, Delete } from '@nestjs/common';
-import { TodoDTO } from './todo.dto';
+//import { TodoDTO } from './todo.dto';
 import { todos } from './todos-mock';
+import { CreateTodoDTO } from './create-todo.dto';
+import { TodoService } from './todo.service';
 
-let todosData = todos;
+
+//let todosData = todos;
 
 
 @Controller('todo')
 export class TodoController {
-    @Get()
+    constructor(private readonly todoService: TodoService) {}
+
+
+    @Post()
+    public async createOne(@Body() createTodoRequest:CreateTodoDTO ) {
+        const resp = await this.todoService.createOne(createTodoRequest);
+        return resp;
+    }
+
+
+   /*  @Get()
      getTodos(): TodoDTO[] {
         return todosData;
     }
@@ -38,5 +51,5 @@ export class TodoController {
         todosData = todosData.filter(todo => todo.id !== id);
         
         return todoToDelete;
-    }
+    } */
 }

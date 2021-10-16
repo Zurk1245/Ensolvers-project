@@ -8,7 +8,7 @@ import { H1 } from './Title';
 
 export function App() {
     const [todos, setTodos] = useState([
-        { id: 1, task: 'Task 1', completed: false },
+        //{ id: 1, task: 'Task 1', completed: false },
     ]);
 
     let positionOfTodoToRemoveTemporarily = useRef();

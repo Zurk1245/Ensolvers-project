@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/Ensolvers-project/static/js/main.2d447aca.chunk.js",
-    "main.js.map": "/Ensolvers-project/static/js/main.2d447aca.chunk.js.map",
+    "main.js": "/Ensolvers-project/static/js/main.888daf29.chunk.js",
+    "main.js.map": "/Ensolvers-project/static/js/main.888daf29.chunk.js.map",
     "runtime-main.js": "/Ensolvers-project/static/js/runtime-main.192e7cbe.js",
     "runtime-main.js.map": "/Ensolvers-project/static/js/runtime-main.192e7cbe.js.map",
     "static/js/2.d9fa4ae0.chunk.js": "/Ensolvers-project/static/js/2.d9fa4ae0.chunk.js",
@@ -12,6 +12,6 @@
   "entrypoints": [
     "static/js/runtime-main.192e7cbe.js",
     "static/js/2.d9fa4ae0.chunk.js",
-    "static/js/main.2d447aca.chunk.js"
+    "static/js/main.888daf29.chunk.js"
   ]
 }

@@ -12,4 +12,6 @@ Typeorm: ^0.2.38
 
 I couldn't set the backend and the database. But you can see the frontend in the following URL: https://zurk1245.github.io/Ensolvers-project/
 
+You can run the frontend app with the command: "npm run build" from the frontend folder
+
 Thank you!
